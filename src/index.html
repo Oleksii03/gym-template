@@ -4,14 +4,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homework 10</title>
+  <title>GYM</title>
   <link rel="stylesheet" href="./SASS/index.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <p><a href="./pages-html/cat-search.html">Cat search</a></p>
-  <br>
-  <p><a href="./pages-html/searchAPI.html">search API</a></p>
+  <header class="header">
+
+    <div class="header__container container container__line">
+
+      <svg class="icon icon-search">
+        <use xlink:href="#icon-search">
+          <symbol id="icon-search" viewBox="0 0 32 32">
+            <path
+              d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z">
+            </path>
+          </symbol>
+        </use>
+      </svg>
+
+      <nav class="header__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link active">Location</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Location</a></li>
+        </ul>
+
+        <a href="/" class="logo__link logo">
+          <img src="./img/Logo.png" alt="logo">
+        </a>
+
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link active">Contact</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+        </ul>
+      </nav>
+
+
+      <svg class="icon icon-menu">
+        <use xlink:href="#icon-menu">
+          <symbol id="icon-menu" viewBox="0 0 32 32">
+            <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+          </symbol>
+        </use>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="hiro">
+      <div class="hiri__container container">
+        <div class="hiro__body body-hiro">
+          <div class="body-hiro__left">
+            <img class="hiro__img" src="./img/cross.png" alt="cross" width="100">
+
+            <div class="content--left">
+              <h3 class="sub__title">
+                Do you want
+                to get fit ?
+              </h3>
+              <p class="text">
+                Lorem ipsum dolor
+                sit amet consec
+                tetuer adipiscing
+                elit sed diam.
+              </p>
+              <button class="btn" type="button">
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <div class="body-hiro__center">
+            <h1 class="title">FITNESS GYM CENTER</h1>
+            <img src="./img/Shadow.png" alt="">
+          </div>
+
+          <div class="body-hiro__right">
+            <img class="hiro__img" src="./img/arrow.png" alt="arrow" width="50">
+
+            <div class="content">
+              <h3 class="sub__title">Start training today</h3>
+              <p class="text">
+                Lorem ipsum dolor
+                sit amet consec
+                tetuer adipiscing
+                elit sed diam.
+              </p>
+              <button class="btn" type="button">
+                Read more
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>

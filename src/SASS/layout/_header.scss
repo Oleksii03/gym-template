@@ -1,0 +1,46 @@
+.header__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #fff;
+  transition: all 250ms;
+  cursor: pointer;
+
+  &:hover {
+    fill: yellow;
+  }
+}
+
+.header__menu {
+  display: flex;
+  column-gap: 200px;
+}
+
+.menu__link {
+  color: #fff;
+}
+
+.logo {
+  width: 80px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+}
