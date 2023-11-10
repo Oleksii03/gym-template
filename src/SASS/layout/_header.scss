@@ -1,5 +1,5 @@
 .header__container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,15 +32,27 @@
 }
 
 .menu__link {
+  position: relative;
   color: #fff;
+  transition: all 250ms;
+
+  &:hover {
+    color: yellow;
+  }
+
 }
+
 
 .logo {
   width: 80px;
 }
 
 .menu__list {
-  display: flex;
-  align-items: center;
-  column-gap: 100px;
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+  }
 }
