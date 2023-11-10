@@ -56,3 +56,40 @@
     column-gap: 100px;
   }
 }
+
+.menu__btn {
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+}
+
+// ------mob-menu---------------------------------------
+
+.mob-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 0);
+  padding: 50px;
+
+  border-radius: 0 0 20px 0;
+  box-shadow: 1px 1px 5px rgba(255, 123, 0, 0.714);
+  transition: transform 300ms;
+
+  transform: translateX(-110%);
+}
+
+.is-visible {
+  transform: translateX(0%);
+}
+
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.mob-menu__link {
+  color: #000000;
+}
